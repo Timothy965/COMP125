@@ -48,7 +48,7 @@ function CalculateImperial() {
 
     else
     {
-        alert("Enter or check all parts!");
+        alert("Please enter the required fields!");
     }
 }
 
@@ -88,7 +88,7 @@ function CalculateMetric() {
 
     else
     {
-        alert("Please enter and check all parts!");
+        alert("Please enter the required fields!");
     }
 }
 
