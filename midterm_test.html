@@ -1,0 +1,131 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>COMP125 MIDTERM</title>
+    <link rel="stylesheet" href="midterm.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+</head>
+<body>
+
+    <!--------Nav Bar---------->
+    <div class="container">
+        <div class="row">
+            <div class="nav">
+                <div class="nav-header">
+                    <div class="nav-title" id="logo">
+
+                    </div>
+                </div>
+                <div class="nav-btn">
+                    <label for="nav-check">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                </div>
+                <div class="nav-links" id="navbar">
+                    <a href="index.html" id="home">Home |</a>
+                </div>
+            </div>
+        </div>
+    </div><br /><br /><br />
+
+    <div class="container2">
+        <div class="col-50">
+            <h3>Billing Address</h3>
+
+            <form id="frm1" onsubmit="return validateForm()" method="post" required>
+                <i class="fa fa-user"></i> First name: <br /><br /><input type="text" name="fname" placeholder="Enter your first name" required><br><br>
+                Last name: <br><br><input type="text" name="lname" placeholder="Enter your last name" required><br><br>
+                <i class="fa fa-address-card-o"></i> Street Address: <br /><br /><input type="text" name="street" placeholder="Enter your street address" required><br><br>
+                <i class="fa fa-institution"></i> City: <br /><br /><input type="text" name="city" placeholder="Enter your City" required><br><br>
+                Province/Territory   <select id="prvnce" required>
+                    <option>AB</option>
+                    <option>BC</option>
+                    <option>MB</option>
+                    <option>NB</option>
+                    <option>NL</option>
+                    <option>NS</option>
+                    <option>NT</option>
+                    <option>NU</option>
+                    <option>ON</option>
+                    <option>PE</option>
+                    <option>QC</option>
+                    <option>SK</option>
+                    <option>YT</option>
+                </select><br><br>
+
+                Zip <br /><br /><input type="text" name="zip" placeholder="M1H 1P4" required><br><br>
+                Phone<br><br><input type="text" id="phone" name="phone" placeholder="575-555-2000" required>
+            </form>
+
+            <script>
+
+            </script>
+        </div>
+    </div>
+
+    <br /><br />
+    <div class="container2">
+        <h3>Delivery Address</h3>
+        <label>
+            <input type="checkbox" checked="checked" name="sameadr" onclick="Trnsfr"><b> Shipping address same as billing address</b>
+        </label><br /><br />
+
+
+                      <form id="frm2" onsubmit="return validateForm()" method="post" required>
+                          <i class="fa fa-user"></i> First name: <br /><br /><input type="text" name="fname2" placeholder="Enter your first name" required><br><br>
+                          Last name: <br><br><input type="text" name="lname2" placeholder="Enter your last name" required><br><br>
+                          <i class="fa fa-address-card-o"></i> Street Address: <br /><br /><input type="text" name="street2" placeholder="Enter your street address" required><br><br>
+                          <i class="fa fa-institution"></i> City: <br /><br /><input type="text" name="city2"  placeholder="Enter your City" required><br><br>
+                          Province/Territory   <select id="prvnce2" required>
+                              <option>AB</option>
+                              <option>BC</option>
+                              <option>MB</option>
+                              <option>NB</option>
+                              <option>NL</option>
+                              <option>NS</option>
+                              <option>NT</option>
+                              <option>NU</option>
+                              <option>ON</option>
+                              <option>PE</option>
+                              <option>QC</option>
+                              <option>SK</option>
+                              <option>YT</option>
+                          </select><br><br>
+                          Zip <br /><br /><input type="text" name="zip2"  placeholder="M1H 1P4" required><br><br>
+                          Phone<br><br><input type="number" id="phone" name="phone2" placeholder="575-555-2000" min="1111111111" max="9999999999" required>
+
+                          <br><br><br><br>
+                          <input type="button" onclick="myFunction()" value="Submit">
+
+                      </form>
+
+    </div>
+    <script src="midterm.js"></script>
+</body>
+
+
+<br /><br /><br />
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+
+    <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+    <div class="w3-xlarge w3-section">
+        <p class="w3-small">
+            <strong>
+                &copy;
+            </strong>
+            Copyright Timothy Issac, Student Number 301229888<br />
+            COMP125, Client-Side Web Development
+        </p>
+    </div>
+
+</footer>
+</html>
