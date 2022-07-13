@@ -1,0 +1,144 @@
+﻿<!DOCTYPE html>
+
+
+<!---------------------------------------->
+<!---------------------------------------->
+<!---------------------------------------->
+<!-- Developed by: Timothy Issac Thomas -->
+<!---------------------------------------->
+<!---------------------------------------->
+<!---------------------------------------->
+
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="style4.css">
+
+    <script src="https://kit.fontawesome.com/3528d2a4ca.js" crossorigin="anonymous"></script>
+    <script src="assignment4.js" type="text/javascript"></script>
+
+    <meta content='width=device-width, initial-scale=1, maximum-scale=1' name='viewport' />
+    <title>FORM VALIDATION</title>
+</head>
+
+<body>
+
+    <!--------Nav Bar---------->
+    <div class="container">
+        <div class="row">
+            <div class="nav">
+                <div class="nav-header">
+                    <div class="nav-title" id="logo">
+
+                    </div>
+                </div>
+                <div class="nav-btn">
+                    <label for="nav-check">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                </div>
+                <div class="nav-links" id="navbar">
+                    <a href="index.html" id="home">Home |</a>
+                </div>
+            </div>
+        </div>
+    </div><br /><br /><br />
+                      <div class="content">
+                          <article>
+                              <form>
+                                  <fieldset>
+                                      <h3 class="center">Member Registration</h3>
+                                      <h4> Please complete all the fields below:</h4>
+
+
+                                      <label for="fname">First Name:<br /></label>
+                                      <input type="text" id="fname" required="required" style="width: 300px" /><br /><br />
+
+                                      <label for="lname">Last Name:<br /></label>
+                                      <input type="text" id="lname" required="required" style="width: 300px" /><br /><br />
+
+                                      <label for="address">Address:<br /></label>
+                                      <input type="text" id="address" required="required" style="width: 300px" placeholder="Enter your street address"/><br /><br />
+
+                                      <label for="city">City:<br /></label>
+                                      <input type="text" id="city" required="required" style="width: 300px" placeholder="Enter your City"/><br /><br />
+
+                                      <label for="pcode">Postal Code:<br /></label>
+                                      <input type="text" id="pcode" required="required" style="width: 203px" placeholder="A0A0A0" />
+                                      <p id="pcodeError" class="errorMsg"></p><br />
+
+                                      <label>Province: </label>
+                                      <select class="label" id="province" required="required">
+                                          <option value=""></option>
+                                          <option value="AB">AB</option>
+                                          <option value="BC">BC</option>
+                                          <option value="MB">MB</option>
+                                          <option value="NB">NB</option>
+                                          <option value="NL">NL</option>
+                                          <option value="NS">NS</option>
+                                          <option value="ON">ON</option>
+                                          <option value="PE">PE</option>
+                                          <option value="QC">QC</option>
+                                          <option value="SK">SK</option>
+                                          <option value="NT">NT</option>
+                                          <option value="NU">NU</option>
+                                          <option value="YT">YT</option>
+
+
+                                      </select><br />
+                                      <br />
+                                      <label>Age:<br /></label>
+                                      <input type="number" id="age" min="18" required="required" placeholder="Enter your age in digits"/><br /><br />
+
+                                      <label for="pass1">Password: <br /></label>
+                                      <input type="password" id="pass1" style="width: 210px" /><br /><br />
+
+                                      <label for="pass2">Confirm Password: <br /></label>
+                                      <input type="password" id="pass2" style="width: 210px" />
+                                      <p id="passwordError" class="errorMsg"></p>
+
+                                      <label for="email">E-mail:<br /></label>
+                                      <input type="email" id="emailbox" style="width: 530px" placeholder="Enter your email address" />
+                                      <p id="emailError" class="errorMsg"></p>
+                                      <br />
+
+
+                                      <input type="button" id="button" value="Register Now" style="width:200px">
+                                      <input type="reset" id="button" value="Clear Form" style="width:200px" onclick="setUpPages()" />
+
+                                  </fieldset>
+
+                              </form>
+                          </article>
+                      </div>
+
+</body><br /><br />
+
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+
+    <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+    <div class="w3-xlarge w3-section">
+        <p class="w3-small">
+            <strong>
+                &copy;
+            </strong>
+            Copyright Timothy Issac, Student Number 301229888<br />
+            ASSIGNMENT 4, Client-Side Web Development
+        </p>
+    </div>
+
+</footer>
+
+</html>
