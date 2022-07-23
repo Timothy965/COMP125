@@ -35,7 +35,7 @@ const bugImage = new Image();
 
 
 var bugReady = false;
-const bugImgSrc = 'img/bug.jpg';
+const bugImgSrc = 'bug.jpg';
 bugImage.onload = function () {
     bugReady = true;
 };
@@ -52,7 +52,7 @@ const init = () => {
 
 
 
-const bgImgSrc = "img/main.jpg";
+const bgImgSrc = "main5.jpg";
 bgImage.onload = init;
 bgImage.src = bgImgSrc;
 
