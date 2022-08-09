@@ -1,0 +1,308 @@
+﻿/* Copyright 2022
+    Timothy Issac Thomas
+    301229888, S22
+*/
+
+.container {
+    border-radius: 5px;
+    background-color: #1d45b3;
+    padding: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 10px;
+}
+
+.row {
+    content: "";
+    display: table;
+    clear: both;
+    width: 90%;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.nav {
+    height: 60px;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+    .nav > .nav-header {
+        display: inline;
+    }
+
+        .nav > .nav-header > .nav-title {
+            display: inline-block;
+            font-size: 30px;
+            color: #fff;
+            padding: 5px 10px 5px 10px;
+        }
+
+    .nav > .nav-btn {
+        display: none;
+    }
+
+    .nav > .nav-links {
+        display: inline;
+        float: right;
+        font-size: 25px;
+    }
+
+        .nav > .nav-links > a {
+            display: inline-block;
+            padding: 5px 10px 5px 10px;
+            text-decoration: none;
+            color: #fff !important;
+            font-size: 20px !important;
+            line-height: 30px !important;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+
+
+
+#c-slider {
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 85%;
+    max-width: 800px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 0 10px #EEEEEE, 0 15px 50px;
+    z-index: 1;
+}
+
+.bs {
+    position: absolute;
+}
+
+#slider {
+    display: flex;
+    width: 400%;
+    z-index: 1;
+}
+
+    #slider section {
+        width: 100%;
+        z-index: 1;
+    }
+
+    #slider img {
+        display: block;
+        width: 100%;
+        height: 60%;
+        z-index: 1;
+    }
+
+    #slider p {
+        position: absolute;
+        bottom: 0;
+        color: white;
+        font-size: 2em;
+        width: 400px;
+        height: 100px;
+        text-align: center;
+        margin-left: 20px;
+        border-radius: 3%;
+        border: 5px solid #f44336;
+        background-color: rgba(255,255,255,0.1);
+    }
+
+
+#btn-prev, #btn-next {
+    color: black;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255,255,255,0.1);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    line-height: 40px;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1;
+}
+
+    #btn-prev:hover, #btn-next:hover {
+        background-color: rgba(255,255,255,2);
+        transition: .8s;
+    }
+
+
+#btn-prev {
+    left: 10px;
+}
+
+#btn-next {
+    right: 10px;
+}
+
+body {
+    background-color: black;
+}
+
+.button3 {
+    background-color: #f44336;
+    position: absolute;
+    right: 177px;
+    top: 74px;
+}
+
+.button:hover {
+    opacity: 1
+}
+
+.like-content {
+    display: inline-block;
+    width: 100%;
+    margin: 40px 0 0;
+    padding: 40px 0 0;
+    font-size: 18px;
+    border-top: 10px dashed #eee;
+    text-align: center;
+}
+
+    .like-content span {
+        color: #9d9da4;
+        font-family: monospace;
+    }
+
+    .like-content .btn-secondary {
+        display: block;
+        margin: 40px auto 0px;
+        text-align: center;
+        background: #ed2553;
+        border-radius: 3px;
+        box-shadow: 0 10px 20px -8px rgb(240, 75, 113);
+        padding: 10px 17px;
+        font-size: 18px;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        color: #ffffff;
+        text-decoration: none;
+        -webkit-transition: 0.3s ease;
+        transition: 0.3s ease;
+    }
+
+        .like-content .btn-secondary:hover {
+            transform: translateY(-3px);
+        }
+
+        .like-content .btn-secondary .fa {
+            margin-right: 5px;
+        }
+
+.animate-like {
+    animation-name: likeAnimation;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-duration: 0.65s;
+}
+
+@keyframes likeAnimation {
+    0% {
+        transform: scale(30);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+#fphotos img {
+    width: 250px;
+    height: 200px;
+    padding: 20px
+}
+
+#fphotos {
+    width: 100%;
+    height: 300px;
+    display: block;
+}
+
+#favoritet {
+    color: #317e93;
+    border: 1px solid #010105;
+    border-radius: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 960px;
+    text-align: center;
+}
+
+.favoritef {
+    position: absolute;
+    z-index: 20;
+    bottom: 20px;
+    right: 0;
+}
+
+.button {
+    background-color: #f4511e;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    opacity: 0.6;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button {
+
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+body {
+    padding: 5px;
+    font-family: "Trebuchet MS";
+    color: #333333;
+    background-color: #F9F3EC;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3em;
+    color: #317e93;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+#btn-update {
+    font-family: Calibri;
+    font-variant: small-caps;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    background-color: #A66F37;
+    width: 100px;
+    position: relative;
+    margin-left: 500px;
+}
